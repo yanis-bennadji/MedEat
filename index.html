@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEat - Votre Assistant Nutritionnel Personnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed w-full z-40 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 hover:opacity-90 transition-opacity">
+                <img src="assets/logo.jpeg" alt="MedEat Logo" class="w-10 h-10 rounded">
+                <span class="text-2xl font-bold text-[#1A7363]">MedEat</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/histoire.html" class="text-gray-800 hover:text-blue-600 transition-colors">Notre histoire</a>
+                <a href="./equipe.html" class="text-gray-800 hover:text-blue-600 transition-colors">L'équipe de MedEat</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-up">
+                        <span class="text-[#1A7363] animate-fade-up delay-150">MedEat</span> 
+                        <br> <br>
+                        Le réflexe santé avant de consommer.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 animate-fade-up delay-300">Grâce à un simple scan du code-barres de votre produit, l'application analyse instantanément sa composition et vous indique s'il est adapté à votre profil santé (traitements en cours, pathologies, allergies, objectifs bien-être…).
+                    </p>
+                </div>
+                <div class="md:w-1/2 perspective-1000">
+                    <img 
+                        src="assets/phone2.png" 
+                        alt="MedEat App Preview" 
+                        class="w-1/2 mx-auto transform transition-all duration-700 hover:scale-105 rotate-6 hover:rotate-12 translate-z-8 animate-fade-up delay-500"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <!-- Feature 1 -->
+                    <div class="relative animate-fade-up delay-150">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10"></div>
+                        <h3 class="text-4xl font-bold mb-4">Scannez</h3>
+                        <p class="text-xl text-gray-600">Scannez le code-barres de votre complément alimentaire ou médicament.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="relative animate-fade-up delay-300">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-pink-200 rounded-full opacity-50 -z-10"></div>
+                        <h3 class="text-4xl font-bold mb-4">Vérifiez</h3>
+                        <p class="text-xl text-gray-600">Vérifiez si le produit est adapté à votre profil santé fournis au préalable.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="relative animate-fade-up delay-500">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-green-200 rounded-full opacity-50 -z-10"></div>
+                        <h3 class="text-4xl font-bold mb-4">Consommez</h3>
+                        <p class="text-xl text-gray-600">Consommez votre produit avec la tranquillité d'esprit qu'il est adapté à votre profil santé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 animate-fade-in">
+                <span class="text-[#1A7363]">Comment ça marche ?</span>
+            </h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <!-- Step 1 -->
+                    <div class="relative animate-fade-in delay-100">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10"></div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-[#1A7363]">01</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Créez votre profil</h3>
+                        <p class="text-xl text-gray-600">Remplissez votre profil avec vos informations personnelles et vos objectifs.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative animate-fade-in delay-200">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-blue-200 rounded-full opacity-50 -z-10"></div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-[#1A7363]">02</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Suivez votre alimentation</h3>
+                        <p class="text-xl text-gray-600">Enregistrez vos repas et suivez vos apports nutritionnels quotidiens.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative animate-fade-in delay-300">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-green-200 rounded-full opacity-50 -z-10"></div>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-[#1A7363]">03</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Recevez des recommandations</h3>
+                        <p class="text-xl text-gray-600">Obtenez des conseils personnalisés pour améliorer votre alimentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto relative">
+                <!-- Circle decoration -->
+                <div class="absolute -top-8 -right-8 w-32 h-32 bg-green-200 rounded-full opacity-50 -z-10"></div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-up">
+                    <span class="text-[#1A7363]">Notre volonté</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="relative">
+                        <!-- Circle decoration -->
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10"></div>
+                        <div class="space-y-6 animate-fade-up delay-200">
+                            <h3 class="text-2xl font-bold text-gray-900">Notre Mission</h3>
+                            <p class="text-xl text-gray-600 leading-relaxed">
+                                Notre mission est de rendre l'information sur les compléments alimentaires accessible à tous. Nous croyons que chacun devrait pouvoir comprendre facilement ce qu'il consomme, sans avoir besoin d'être un expert en santé.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <!-- Circle decoration -->
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-blue-200 rounded-full opacity-50 -z-10"></div>
+                        <div class="space-y-6 animate-fade-up delay-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Notre Approche</h3>
+                            <p class="text-xl text-gray-600 leading-relaxed">
+                                En collaborant avec des professionnels de santé français, nous avons développé une application qui traduit les informations complexes en langage simple et clair, tout en garantissant la fiabilité des données.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 animate-fade-up delay-400">
+                    <a href="#download" class="inline-block bg-[#1A7363] text-white px-8 py-4 rounded-full hover:scale-105 transform transition-all duration-300">
+                        Rejoignez-nous dans cette aventure
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="relative max-w-6xl mx-auto">
+                <!-- Bientôt disponible badge -->
+                <div class="absolute -top-4 right-8 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-bold transform rotate-6 z-30 shadow-lg">
+                    Bientôt disponible !
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-3xl p-8 relative animate-fade-up">
+                    <!-- Blue circle decoration -->
+                    
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between relative z-20">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-up delay-200">Reprenez le contrôle de votre santé</h2>
+                            <p class="text-xl text-gray-600 mb-8 animate-fade-up delay-300">
+                                Avec MedEat, scannez vos médicaments et identifiez de possibles contre-indications en fonction de votre état de santé.
+                            </p>
+                            <div class="flex space-x-4 animate-fade-up delay-400">
+                                <a href="#" class="inline-block transition-transform hover:scale-105">
+                                    <img src="assets/appstore2.svg" alt="Télécharger dans l'App Store" class="h-12">
+                                </a>
+                                <a href="#" class="inline-block transition-transform hover:scale-105">
+                                    <img src="assets/playstore2.svg" alt="Disponible sur Google Play" class="h-12">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 flex justify-center animate-fade-up delay-500">
+                            <img src="assets/logo.jpeg" alt="MedEat Logo" class="w-32 h-32">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-8 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-[#1A7363]">MedEat</span>
+                    <span class="text-gray-600">- Votre assistant nutritionnel personnel</span>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#how-it-works" class="text-gray-600 hover:text-[#1A7363]">Comment ça marche</a>
+                    <a href="#mission" class="text-gray-600 hover:text-[#1A7363]">Notre mission</a>
+                    <a href="#blog" class="text-gray-600 hover:text-[#1A7363]">L'équipe de MedEat</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-[#1A7363]">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-[#1A7363]">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 mt-6 pt-6 text-center text-gray-600">
+                <p>&copy; 2024 MedEat. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

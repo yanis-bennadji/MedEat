@@ -1,0 +1,251 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+    opacity: 0;
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-right {
+    opacity: 0;
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+    opacity: 0;
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation delays */
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+/* Intersection Observer animations */
+.reveal {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Form focus styles */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Custom transitions */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Custom shadows */
+.shadow-custom {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom gradients */
+.gradient-blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+/* Custom hover effects */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+    @apply border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition-colors;
+}
+
+/* Custom card styles */
+.card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6;
+}
+
+/* Custom section spacing */
+.section-spacing {
+    @apply py-16 md:py-24;
+}
+
+/* Custom container */
+.container-custom {
+    @apply container mx-auto px-4 max-w-7xl;
+}
+
+/* Custom typography */
+.heading-1 {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 leading-tight;
+}
+
+.heading-2 {
+    @apply text-3xl font-bold text-gray-900 mb-8;
+}
+
+.heading-3 {
+    @apply text-xl font-semibold text-gray-900 mb-4;
+}
+
+/* Custom mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 50;
+}
+
+.mobile-menu.hidden {
+    transform: translateX(100%);
+}
+
+/* Custom image styles */
+.image-rounded {
+    @apply rounded-2xl shadow-2xl;
+}
+
+/* Custom icon styles */
+.icon-circle {
+    @apply w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center;
+}
+
+/* Custom testimonial styles */
+.testimonial-card {
+    @apply bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow;
+}
+
+/* Custom footer styles */
+.footer-link {
+    @apply text-gray-400 hover:text-white transition-colors;
+} 

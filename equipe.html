@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'équipe MedEat - Votre Assistant Nutritionnel Personnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed w-full z-40 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 hover:opacity-90 transition-opacity">
+                <img src="assets/logo.jpeg" alt="MedEat Logo" class="w-10 h-10 rounded">
+                <span class="text-2xl font-bold text-[#1A7363]">MedEat</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/histoire.html" class="text-gray-800 hover:text-[#1A7363] transition-colors">Notre histoire</a>
+                <a href="/equipe.html" class="text-[#1A7363]">L'équipe de MedEat</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Team Section -->
+    <section class="pt-32 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-up">
+                    <span class="text-[#1A7363]">Notre équipe</span>
+                </h1>
+                
+                <!-- Circle decoration -->
+                <div class="absolute right-0 top-32 w-32 h-32 bg-blue-200 rounded-full opacity-50 -z-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Team Member 1 -->
+                    <div class="relative group animate-fade-up delay-100">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10 transition-transform group-hover:scale-110"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105">
+                            <div class="relative w-full aspect-square mb-6 overflow-hidden rounded-xl">
+                                <img src="assets/placeholder.jpg" alt="Membre 1" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Wiam Bouaziz</h3>
+                            <p class="text-[#1A7363] font-semibold mb-4">3ème année étudiante en pharmacie</p>
+                            <p class="text-gray-600">Une courte description du membre de l'équipe et de son rôle dans le projet MedEat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="relative group animate-fade-up delay-200">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-green-200 rounded-full opacity-50 -z-10 transition-transform group-hover:scale-110"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105">
+                            <div class="relative w-full aspect-square mb-6 overflow-hidden rounded-xl">
+                                <img src="assets/placeholder.jpg" alt="Membre 2" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Sofiane Siroukane</h3>
+                            <p class="text-[#1A7363] font-semibold mb-4">5ème année étudiante en pharmacie</p>
+                            <p class="text-gray-600">Une courte description du membre de l'équipe et de son rôle dans le projet MedEat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="relative group animate-fade-up delay-300">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-pink-200 rounded-full opacity-50 -z-10 transition-transform group-hover:scale-110"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-105">
+                            <div class="relative w-full aspect-square mb-6 overflow-hidden rounded-xl">
+                                <img src="assets/placeholder.jpg" alt="Membre 3" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Manel Begaga</h3>
+                            <p class="text-[#1A7363] font-semibold mb-4">5ème année étudiante en pharmacie</p>
+                            <p class="text-gray-600">Une courte description du membre de l'équipe et de son rôle dans le projet MedEat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-8 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-[#1A7363]">MedEat</span>
+                    <span class="text-gray-600">- Votre assistant nutritionnel personnel</span>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="index.html#how-it-works" class="text-gray-600 hover:text-[#1A7363]">Comment ça marche</a>
+                    <a href="index.html#mission" class="text-gray-600 hover:text-[#1A7363]">Notre mission</a>
+                    <a href="#" class="text-gray-600 hover:text-[#1A7363]">L'équipe de MedEat</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-[#1A7363]">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-[#1A7363]">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 mt-6 pt-6 text-center text-gray-600">
+                <p>&copy; 2024 MedEat. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
