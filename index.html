@@ -37,7 +37,7 @@
                 </div>
                 <div class="md:w-1/2 perspective-1000">
                     <img 
-                        src="assets/phone2.png" 
+                        src="assets/phone.png" 
                         alt="MedEat App Preview" 
                         class="w-1/2 mx-auto transform transition-all duration-700 hover:scale-105 rotate-6 hover:rotate-12 translate-z-8 animate-fade-up delay-500"
                     >
@@ -77,42 +77,56 @@
     </section>
 
     <!-- How it Works Section -->
-    <section id="how-it-works" class="py-16 bg-white">
+    <section id="how-it-works" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 animate-fade-in">
-                <span class="text-[#1A7363]">Comment ça marche ?</span>
-            </h2>
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                    <!-- Step 1 -->
-                    <div class="relative animate-fade-in delay-100">
-                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10"></div>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-[#1A7363]">01</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Créez votre profil</h3>
-                        <p class="text-xl text-gray-600">Remplissez votre profil avec vos informations personnelles et vos objectifs.</p>
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Comment ça marche ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Step 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg transform hover:scale-110 hover:rotate-1 transition-all duration-300 animate-fade-up h-[700px] hover:shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <span class="text-6xl font-bold text-blue-200">1.</span>
+                        <h3 class="text-2xl font-bold text-blue-900 ml-4">Renseignez vos informations de santé</h3>
                     </div>
+                    <div class="h-64 bg-white rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-blue-900 text-lg leading-relaxed">
+                        Indiquez vos conditions médicales particulières, comme une grossesse ou l'allaitement, pour obtenir des recommandations personnalisées. Notre système prend en compte votre profil complet pour vous fournir les meilleures recommandations.
+                    </p>
+                </div>
 
-                    <!-- Step 2 -->
-                    <div class="relative animate-fade-in delay-200">
-                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-blue-200 rounded-full opacity-50 -z-10"></div>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-[#1A7363]">02</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Suivez votre alimentation</h3>
-                        <p class="text-xl text-gray-600">Enregistrez vos repas et suivez vos apports nutritionnels quotidiens.</p>
+                <!-- Step 2 -->
+                <div class="bg-gradient-to-br from-rose-50 to-rose-100 rounded-2xl p-8 shadow-lg transform hover:scale-110 hover:rotate-1 transition-all duration-300 animate-fade-up delay-100 h-[700px] hover:shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <span class="text-6xl font-bold text-rose-200">2.</span>
+                        <h3 class="text-2xl font-bold text-rose-900 ml-4">Scannez vos boîtes de médicaments</h3>
                     </div>
+                    <div class="h-64 bg-white rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-rose-900 text-lg leading-relaxed">
+                        Utilisez votre appareil photo pour scanner vos médicaments et obtenir instantanément leurs informations détaillées. Notre technologie de reconnaissance est rapide et précise pour une expérience fluide.
+                    </p>
+                </div>
 
-                    <!-- Step 3 -->
-                    <div class="relative animate-fade-in delay-300">
-                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-green-200 rounded-full opacity-50 -z-10"></div>
-                        <div class="mb-6">
-                            <span class="text-4xl font-bold text-[#1A7363]">03</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Recevez des recommandations</h3>
-                        <p class="text-xl text-gray-600">Obtenez des conseils personnalisés pour améliorer votre alimentation.</p>
+                <!-- Step 3 -->
+                <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 shadow-lg transform hover:scale-110 hover:rotate-1 transition-all duration-300 animate-fade-up delay-200 h-[700px] hover:shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <span class="text-6xl font-bold text-emerald-200">3.</span>
+                        <h3 class="text-2xl font-bold text-emerald-900 ml-4">Obtenez des informations fiables et claires</h3>
                     </div>
+                    <div class="h-64 bg-white rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-emerald-900 text-lg leading-relaxed">
+                        Recevez des informations personnalisées sur vos médicaments, leurs interactions et les précautions à prendre. Nos recommandations sont basées sur des données médicales vérifiées.
+                    </p>
                 </div>
             </div>
         </div>
@@ -134,10 +148,9 @@
                         <!-- Circle decoration -->
                         <div class="absolute -top-4 -left-4 w-20 h-20 bg-yellow-200 rounded-full opacity-50 -z-10"></div>
                         <div class="space-y-6 animate-fade-up delay-200">
-                            <h3 class="text-2xl font-bold text-gray-900">Notre Mission</h3>
+                            <h3 class="text-2xl font-bold text-gray-900">Pourquoi MedEat ?</h3>
                             <p class="text-xl text-gray-600 leading-relaxed">
-                                Notre mission est de rendre l'information sur les compléments alimentaires accessible à tous. Nous croyons que chacun devrait pouvoir comprendre facilement ce qu'il consomme, sans avoir besoin d'être un expert en santé.
-                            </p>
+                                Aujourd'hui, de plus en plus de personnes consomment des compléments sans vraiment savoir s'ils sont utiles, efficaces ou compatibles avec leur état de santé ainsi que leur traitement. Med'Eat vous permet de reprendre le contrôle, en consommant intelligemment et en toute sécurité.                            </p>
                         </div>
                     </div>
 
@@ -147,7 +160,7 @@
                         <div class="space-y-6 animate-fade-up delay-300">
                             <h3 class="text-2xl font-bold text-gray-900">Notre Approche</h3>
                             <p class="text-xl text-gray-600 leading-relaxed">
-                                En collaborant avec des professionnels de santé français, nous avons développé une application qui traduit les informations complexes en langage simple et clair, tout en garantissant la fiabilité des données.
+                                Notre mission est de rendre l'information médicale accessible à tous. En simplifiant les termes complexes et en proposant une interface intuitive, nous permettons à chacun de comprendre et de gérer sa santé en toute autonomie, sans avoir besoin de connaissances médicales approfondies.
                             </p>
                         </div>
                     </div>
